@@ -13,6 +13,8 @@ tlsn-core = { git = "https://github.com/tlsnotary/tlsn", rev = "6152883" }
 elliptic-curve = { version = "0.13.5", features = ["pkcs8"] }
 chrono = "0.4.31"
 hashbrown = "0.14.3"
-
 methods = { path = "../methods" }
 tlsn-substrings-verifier = { path = "../tlsn-substrings-verifier" }
+
+[features]
+cuda = ["risc0-zkvm/cuda"]
